@@ -1,0 +1,7 @@
+.bg-dark {
+    background-color: none;
+}
+
+.gradient-bg {
+    background-image: linear-gradient(to right, red , yellow);
+}
