@@ -42,7 +42,7 @@ function getWeather(lat, long) {
       })
       .then(function(response) {
         console.log(response);
-        console.log("Datetime:" + " " + response.current.dt + " " + 
+        console.log("Current: Datetime:" + " " + response.current.dt + " " + 
           "Temp:" + " " + response.current.temp + " " +
           "IdonId:" + " " + response.current.weather[0].icon + " " +
           "Wind:" + " " + response.current.wind_speed + " " +
@@ -54,15 +54,21 @@ function getWeather(lat, long) {
     //     gifImg.setAttribute('src', response.data[0].images.fixed_height.url);
     //     responseContainerEl.appendChild(gifImg);
     
-    // storeSearch(searchTerm);
-
-
+    // storeSearch(searchTerm)
+    
+  //DAY + 1
+          console.log("Current + 1: Datetime:" + " " + response.daily[0].dt + " " + 
+          "Temp:" + " " + response.daily[0].temp.day + " " +
+          "IdonId:" + " " + response.daily[0].weather[0].icon + " " +
+          "Wind:" + " " + response.daily[0].wind_speed + " " +
+          "Humidity:" + " " + response.daily[0].humidity);
+  
       });
   }
 
 // PLACEHOLDER FOR DISPLAY CITY CONTENT
 // function displayCityData(params) {
-  
+
   
 // }
 
