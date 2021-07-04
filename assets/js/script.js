@@ -50,11 +50,12 @@ $("#searchBtn").on("click", function(event) {
 
 // SEARCH PREVIOUS CITY
 
-// $("#searchBtn").on("click", function(event) {
-//   event.preventDefault();
-//   city = $("<button>").val;
-//   fetchWeather(prevCity);
-// }
+$(document).on("click", ".btn-secondary", function() {
+  var searchNumberButton = $(this).val();
+  // console.log(searchNumberButton);
+  city = searchNumberButton;
+  fetchWeather(city);
+})
 
 // FETCH WEATHER DATA
 function fetchWeather(cityName) {
@@ -80,17 +81,18 @@ function fetchWeather(cityName) {
             '&exclude=minutely,hourly,alerts' + 
             '&units=imperial' +
             '&appid=527dcf6e38939483d3ad43186117df6b'
-        )
-          .then(function(response) {
-            return response.json();
-          })
-          .then(function(response) {
-            // console.log(response);
-              var weatherDataArr = (response.daily);
-              displayCurrentWeather(weatherDataArr);
-              displayForecastWeather(weatherDataArr);
-          })
-        })};
+        );
+      })
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(response) {
+        // console.log(response);
+          var weatherDataArr = (response.daily);
+          displayCurrentWeather(weatherDataArr);
+          displayForecastWeather(weatherDataArr);
+      });
+}
 
 
 // DISPLAY WEATHER
