@@ -16,7 +16,7 @@
     
     <div class="container ">
 
-        <aside class="col-4">
+        <aside class="col-2">
             <h2>Search for a City:</h2>
             <div class="input-group">
                 <div class="form-outline">
@@ -27,39 +27,21 @@
                 </div>   
               </div>
             <hr>
-            <button class="btn btn-secondary btn-block">SEARCH HISTORY BUTTONS HERE</button>
+            <div id="previous-searches"></div>
         </aside>
     
-        <main class="col-8 display-blocks">
+        <main class="col-10 display-blocks">
             <!-- Main City Display -->
             <div class="city-display">
                 <div class="city-display-content" id="city-stats-space"></div>
-                <h3>City Name</h3>
+                <div class="current-stats-content" id="current-stats-space"></div>
 
             </div>
     
             <!-- Five Day Forcase for chosen city -->
             <div class="forecast-display">
-                <h3>Five Day Forcast</h3>
-                <div class="forecast-daily-boxes">
-                    <div class="box">
-
-                    </div>
-                    <div class="box">
-
-                    </div>
-                    <div class="box">
-
-                    </div>
-                    <div class="box">
-
-                    </div>
-                    <div class="box">
-
-                    </div>
-
-
-                    
+                <h3>Five Day Forecast</h3>
+                <div class="forecast-daily-boxes" id="forecast-boxes">
                 </div>
             </div>
         </main>
@@ -67,10 +49,11 @@
 
     </div>
 
-    <script src="./assets/js/script.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
     </body>
 </html>
