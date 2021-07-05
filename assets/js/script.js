@@ -105,7 +105,7 @@ function displayCurrentWeather(weatherData) {
   .html("<h3>" + city + " - " + currentDate + "<img id='wicon' src='' alt='Weather icon'></h3>")
 
   var currentIcon = weatherData[0].weather[0].icon;
-  var iconImg = "http://openweathermap.org/img/w/" + currentIcon + ".png";
+  var iconImg = "https://openweathermap.org/img/w/" + currentIcon + ".png";
   $("#wicon").attr("src", iconImg);
 
   var currentTemp = weatherData[0].temp.day;
@@ -142,7 +142,7 @@ function displayForecastWeather(weatherData) {
     var forecastIcon = weatherData[i].weather[0].icon;
     var forecastWind = weatherData[i].wind_speed;
     var forecastHumidity = weatherData[i].humidity;
-    var iconFutureImg = "http://openweathermap.org/img/w/" + forecastIcon + ".png";
+    var iconFutureImg = "https://openweathermap.org/img/w/" + forecastIcon + ".png";
 
 
     var forecastDayEl = $("<div>")
