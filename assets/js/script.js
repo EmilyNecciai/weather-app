@@ -154,7 +154,7 @@ function displayForecastWeather(weatherData) {
     var forecastContentEls = 
     $(forecastDayEl).each(function(){
         $("<h4>").attr("data-id", $(this).append(forecastDate + "</br></br>"))
-        $("<img class='ficon'>").attr("data-id", $(this).append($(".ficon").attr("src", iconFutureImg) + "</br>"))
+        $("<img>").attr("data-id", $(this).append("<img src=" + iconFutureImg + ">"+ "</br>"))
         $("<p>").attr("data-id", $(this).append("Temperature: "+ forecastTemp + "&deg;F"+ "</br>"))
         $("<p>").attr("data-id", $(this).append("Wind: "+ forecastWind  + " MPH"+ "</br>"))
         $("<p>").attr("data-id", $(this).append("Humidity: " + forecastHumidity + "%"+ "</br>"))
@@ -165,9 +165,4 @@ function displayForecastWeather(weatherData) {
 
 
 displayCities(cityArr);
-
-
-
-
-  
 
