@@ -1,7 +1,7 @@
 # weather-app
 Challenge for Module 6 - Server-Side APIs for the GW bootcamp course. 
 
-Live Site: https://emilynecciai.github.io/weather-app/ 
+[Live Site](https://emilynecciai.github.io/weather-app/)
 
 ![Preview](https://github.com/EmilyNecciai/weather-app/blob/5f980a759f7c94b3d1adf653bc605b38fb9ed8af/assets/img/final-dashboard-recording.gif)
 
